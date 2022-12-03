@@ -10,13 +10,15 @@
             this.bearSize = bearSize;
         }
 
+        public Size BearSize { get { return bearSize; } }
+
         public override double GetPrice()
         {
             if (bearSize == Size.MEDIUM)
-                return base.GetPrice() * (1.0 + (double)15 /100);
+                return base.GetPrice() * (1.0 + 0.15 );
 
             if (bearSize == Size.LARGE)
-                return base.GetPrice() * (1.0 + (double)30 / 100);
+                return base.GetPrice() * (1.0 + 0.30 );
 
             return base.GetPrice();
         }

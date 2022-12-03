@@ -19,6 +19,6 @@ namespace ToyShop
 
         public virtual string GetName() { return this.name; }
         public virtual double GetPrice() { return this.price; }
-        public override string ToString() { return $"{name} costs {GetPrice()}"; }
+        public override string ToString() { return $"{name} costs: {GetPrice()}$$$"; }
     }
 }
